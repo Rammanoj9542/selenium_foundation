@@ -12,22 +12,25 @@ This project aims to automate testing processes using Selenium WebDriver. Seleni
 - **Parallel Execution**: Execute tests in parallel to reduce test execution time and improve efficiency.
 
 ## Project Structure
-selenium-automated-testing-project/
+selenium_foundation/
 │
 ├── src/
-│ ├── main/
-│ │ └── java/
-│ │ └── [main_package]/
-│ │ └── [source_files]
-│ │
-│ └── test/
-│ └── java/
-│ └── [test_package]/
-│ └── [test_files]
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── <package>/        # Java source code files
+│   │   └── resources/            # Resource files (e.g., configuration files)
+│   │
+│   └── test/
+│       ├── java/
+│       │   └── <package>/        # Test source code files
+│       └── resources/            # Test resource files (e.g., test data)
 │
-├── pom.xml
-├── README.md
-└── .gitignore
+├── target/                       # Generated files (e.g., compiled classes, test reports)
+│
+├── pom.xml                       # Maven project configuration file
+│
+└── README.md                     # Project documentation
+
 
 
 ## Download and Install Eclipse IDE:
@@ -76,7 +79,6 @@ After importing the Selenium project, follow these steps to run Maven verify in 
 
 1. Click on the "Run symbol" in the toolbar.
 
-
 3. In the goals field, enter "maven verify".
 
 4. Click "Run" to execute the Maven verify command.
@@ -84,6 +86,9 @@ After importing the Selenium project, follow these steps to run Maven verify in 
 ## Usage
 
 1. Write test scripts using Selenium WebDriver and TestNG/JUnit.
+
 2. Organize test scripts using the Page Object Model (POM) design pattern.
+
 3. Run tests using your preferred test runner (e.g., TestNG or JUnit).
+
 4. Analyze test reports generated after test execution.
